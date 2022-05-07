@@ -17,12 +17,7 @@
 		24C8DDC828261EA2003617CA /* HJOpusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDC728261EA2003617CA /* HJOpusTests.m */; };
 		24C8DDD228261EA2003617CA /* HJOpusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDD128261EA2003617CA /* HJOpusUITests.m */; };
 		24C8DDD428261EA2003617CA /* HJOpusUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDD328261EA2003617CA /* HJOpusUITestsLaunchTests.m */; };
-		24C8DDF128261EE0003617CA /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C8DDE628261EE0003617CA /* libopus.a */; };
-		24C8DDF228261EE0003617CA /* OKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDE728261EE0003617CA /* OKDecoder.m */; };
-		24C8DDF328261EE0003617CA /* OKEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDE928261EE0003617CA /* OKEncoder.m */; };
-		24C8DDF428261EE0003617CA /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDEB28261EE0003617CA /* AudioManager.m */; };
-		24C8DDF528261EE0003617CA /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDED28261EE0003617CA /* amrFileCodec.m */; };
-		24C8DDF628261EE0003617CA /* OKCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDEE28261EE0003617CA /* OKCodec.m */; };
+		24C8DDFD2826414A003617CA /* HJDemoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDFB2826414A003617CA /* HJDemoView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,22 +55,8 @@
 		24C8DDCD28261EA2003617CA /* HJOpusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJOpusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24C8DDD128261EA2003617CA /* HJOpusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJOpusUITests.m; sourceTree = "<group>"; };
 		24C8DDD328261EA2003617CA /* HJOpusUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJOpusUITestsLaunchTests.m; sourceTree = "<group>"; };
-		24C8DDE128261EE0003617CA /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
-		24C8DDE228261EE0003617CA /* OKEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKEncoder.h; sourceTree = "<group>"; };
-		24C8DDE328261EE0003617CA /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
-		24C8DDE428261EE0003617CA /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
-		24C8DDE528261EE0003617CA /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
-		24C8DDE628261EE0003617CA /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
-		24C8DDE728261EE0003617CA /* OKDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKDecoder.m; sourceTree = "<group>"; };
-		24C8DDE828261EE0003617CA /* OKCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCodec.h; sourceTree = "<group>"; };
-		24C8DDE928261EE0003617CA /* OKEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKEncoder.m; sourceTree = "<group>"; };
-		24C8DDEA28261EE0003617CA /* opus_custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_custom.h; sourceTree = "<group>"; };
-		24C8DDEB28261EE0003617CA /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
-		24C8DDEC28261EE0003617CA /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
-		24C8DDED28261EE0003617CA /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
-		24C8DDEE28261EE0003617CA /* OKCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKCodec.m; sourceTree = "<group>"; };
-		24C8DDEF28261EE0003617CA /* OKDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKDecoder.h; sourceTree = "<group>"; };
-		24C8DDF028261EE0003617CA /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+		24C8DDFB2826414A003617CA /* HJDemoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJDemoView.m; sourceTree = "<group>"; };
+		24C8DDFC2826414A003617CA /* HJDemoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJDemoView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +64,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24C8DDF128261EE0003617CA /* libopus.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,13 +107,13 @@
 		24C8DDAA28261EA0003617CA /* HJOpus */ = {
 			isa = PBXGroup;
 			children = (
+				24C8DDFA2826414A003617CA /* Opus */,
 				24C8DDAB28261EA0003617CA /* AppDelegate.h */,
 				24C8DDAC28261EA0003617CA /* AppDelegate.m */,
 				24C8DDAE28261EA0003617CA /* SceneDelegate.h */,
 				24C8DDAF28261EA0003617CA /* SceneDelegate.m */,
 				24C8DDB128261EA0003617CA /* ViewController.h */,
 				24C8DDB228261EA0003617CA /* ViewController.m */,
-				24C8DDE028261EE0003617CA /* Opus */,
 				24C8DDB428261EA0003617CA /* Main.storyboard */,
 				24C8DDB728261EA1003617CA /* Assets.xcassets */,
 				24C8DDB928261EA1003617CA /* LaunchScreen.storyboard */,
@@ -160,25 +140,11 @@
 			path = HJOpusUITests;
 			sourceTree = "<group>";
 		};
-		24C8DDE028261EE0003617CA /* Opus */ = {
+		24C8DDFA2826414A003617CA /* Opus */ = {
 			isa = PBXGroup;
 			children = (
-				24C8DDE128261EE0003617CA /* opus.h */,
-				24C8DDE228261EE0003617CA /* OKEncoder.h */,
-				24C8DDE428261EE0003617CA /* amrFileCodec.h */,
-				24C8DDE528261EE0003617CA /* opus_multistream.h */,
-				24C8DDE628261EE0003617CA /* libopus.a */,
-				24C8DDE728261EE0003617CA /* OKDecoder.m */,
-				24C8DDE828261EE0003617CA /* OKCodec.h */,
-				24C8DDE928261EE0003617CA /* OKEncoder.m */,
-				24C8DDEA28261EE0003617CA /* opus_custom.h */,
-				24C8DDE328261EE0003617CA /* AudioManager.h */,
-				24C8DDEB28261EE0003617CA /* AudioManager.m */,
-				24C8DDEC28261EE0003617CA /* opus_types.h */,
-				24C8DDED28261EE0003617CA /* amrFileCodec.m */,
-				24C8DDEE28261EE0003617CA /* OKCodec.m */,
-				24C8DDEF28261EE0003617CA /* OKDecoder.h */,
-				24C8DDF028261EE0003617CA /* opus_defines.h */,
+				24C8DDFC2826414A003617CA /* HJDemoView.h */,
+				24C8DDFB2826414A003617CA /* HJDemoView.m */,
 			);
 			path = Opus;
 			sourceTree = "<group>";
@@ -315,13 +281,9 @@
 			files = (
 				24C8DDB328261EA0003617CA /* ViewController.m in Sources */,
 				24C8DDAD28261EA0003617CA /* AppDelegate.m in Sources */,
-				24C8DDF428261EE0003617CA /* AudioManager.m in Sources */,
-				24C8DDF628261EE0003617CA /* OKCodec.m in Sources */,
-				24C8DDF228261EE0003617CA /* OKDecoder.m in Sources */,
 				24C8DDBE28261EA1003617CA /* main.m in Sources */,
-				24C8DDF328261EE0003617CA /* OKEncoder.m in Sources */,
 				24C8DDB028261EA0003617CA /* SceneDelegate.m in Sources */,
-				24C8DDF528261EE0003617CA /* amrFileCodec.m in Sources */,
+				24C8DDFD2826414A003617CA /* HJDemoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

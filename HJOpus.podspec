@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   #版本号
   s.version      = "1.0"
   #支持的pod最低版本
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '12.0'
   #简介
   s.summary      = "opus编码库"
   #项目主页地址
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   #项目的地址
   s.source       = { :git => "https://github.com/hanwanjie853710069/HJOpus.git", :tag => s.version }
   #需要包含的源文件
-  s.source_files  = "HJOpus/Opus/*.{h,m,a}"
+  s.source_files  = "HJOpus/Opus/*.{h,m}"
   #是否支持ARC
   s.requires_arc = true
 

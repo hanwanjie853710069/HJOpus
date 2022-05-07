@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24C8DDAD28261EA0003617CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDAC28261EA0003617CA /* AppDelegate.m */; };
+		24C8DDB028261EA0003617CA /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDAF28261EA0003617CA /* SceneDelegate.m */; };
+		24C8DDB328261EA0003617CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDB228261EA0003617CA /* ViewController.m */; };
+		24C8DDB628261EA0003617CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C8DDB428261EA0003617CA /* Main.storyboard */; };
+		24C8DDB828261EA1003617CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24C8DDB728261EA1003617CA /* Assets.xcassets */; };
+		24C8DDBB28261EA1003617CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24C8DDB928261EA1003617CA /* LaunchScreen.storyboard */; };
+		24C8DDBE28261EA1003617CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDBD28261EA1003617CA /* main.m */; };
+		24C8DDC828261EA2003617CA /* HJOpusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDC728261EA2003617CA /* HJOpusTests.m */; };
+		24C8DDD228261EA2003617CA /* HJOpusUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDD128261EA2003617CA /* HJOpusUITests.m */; };
+		24C8DDD428261EA2003617CA /* HJOpusUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDD328261EA2003617CA /* HJOpusUITestsLaunchTests.m */; };
+		24C8DDF128261EE0003617CA /* libopus.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C8DDE628261EE0003617CA /* libopus.a */; };
+		24C8DDF228261EE0003617CA /* OKDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDE728261EE0003617CA /* OKDecoder.m */; };
+		24C8DDF328261EE0003617CA /* OKEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDE928261EE0003617CA /* OKEncoder.m */; };
+		24C8DDF428261EE0003617CA /* AudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDEB28261EE0003617CA /* AudioManager.m */; };
+		24C8DDF528261EE0003617CA /* amrFileCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDED28261EE0003617CA /* amrFileCodec.m */; };
+		24C8DDF628261EE0003617CA /* OKCodec.m in Sources */ = {isa = PBXBuildFile; fileRef = 24C8DDEE28261EE0003617CA /* OKCodec.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24C8DDC428261EA2003617CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C8DDA028261EA0003617CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C8DDA728261EA0003617CA;
+			remoteInfo = HJOpus;
+		};
+		24C8DDCE28261EA2003617CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24C8DDA028261EA0003617CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24C8DDA728261EA0003617CA;
+			remoteInfo = HJOpus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24C8DDA828261EA0003617CA /* HJOpus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJOpus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C8DDAB28261EA0003617CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24C8DDAC28261EA0003617CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24C8DDAE28261EA0003617CA /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		24C8DDAF28261EA0003617CA /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		24C8DDB128261EA0003617CA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24C8DDB228261EA0003617CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24C8DDB528261EA0003617CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24C8DDB728261EA1003617CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24C8DDBA28261EA1003617CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24C8DDBC28261EA1003617CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24C8DDBD28261EA1003617CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24C8DDC328261EA2003617CA /* HJOpusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJOpusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C8DDC728261EA2003617CA /* HJOpusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJOpusTests.m; sourceTree = "<group>"; };
+		24C8DDCD28261EA2003617CA /* HJOpusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJOpusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24C8DDD128261EA2003617CA /* HJOpusUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJOpusUITests.m; sourceTree = "<group>"; };
+		24C8DDD328261EA2003617CA /* HJOpusUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJOpusUITestsLaunchTests.m; sourceTree = "<group>"; };
+		24C8DDE128261EE0003617CA /* opus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus.h; sourceTree = "<group>"; };
+		24C8DDE228261EE0003617CA /* OKEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKEncoder.h; sourceTree = "<group>"; };
+		24C8DDE328261EE0003617CA /* AudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioManager.h; sourceTree = "<group>"; };
+		24C8DDE428261EE0003617CA /* amrFileCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = amrFileCodec.h; sourceTree = "<group>"; };
+		24C8DDE528261EE0003617CA /* opus_multistream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_multistream.h; sourceTree = "<group>"; };
+		24C8DDE628261EE0003617CA /* libopus.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libopus.a; sourceTree = "<group>"; };
+		24C8DDE728261EE0003617CA /* OKDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKDecoder.m; sourceTree = "<group>"; };
+		24C8DDE828261EE0003617CA /* OKCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKCodec.h; sourceTree = "<group>"; };
+		24C8DDE928261EE0003617CA /* OKEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKEncoder.m; sourceTree = "<group>"; };
+		24C8DDEA28261EE0003617CA /* opus_custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_custom.h; sourceTree = "<group>"; };
+		24C8DDEB28261EE0003617CA /* AudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioManager.m; sourceTree = "<group>"; };
+		24C8DDEC28261EE0003617CA /* opus_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_types.h; sourceTree = "<group>"; };
+		24C8DDED28261EE0003617CA /* amrFileCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = amrFileCodec.m; sourceTree = "<group>"; };
+		24C8DDEE28261EE0003617CA /* OKCodec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OKCodec.m; sourceTree = "<group>"; };
+		24C8DDEF28261EE0003617CA /* OKDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OKDecoder.h; sourceTree = "<group>"; };
+		24C8DDF028261EE0003617CA /* opus_defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = opus_defines.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24C8DDA528261EA0003617CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C8DDF128261EE0003617CA /* libopus.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDC028261EA2003617CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDCA28261EA2003617CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24C8DD9F28261EA0003617CA = {
+			isa = PBXGroup;
+			children = (
+				24C8DDAA28261EA0003617CA /* HJOpus */,
+				24C8DDC628261EA2003617CA /* HJOpusTests */,
+				24C8DDD028261EA2003617CA /* HJOpusUITests */,
+				24C8DDA928261EA0003617CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24C8DDA928261EA0003617CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24C8DDA828261EA0003617CA /* HJOpus.app */,
+				24C8DDC328261EA2003617CA /* HJOpusTests.xctest */,
+				24C8DDCD28261EA2003617CA /* HJOpusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24C8DDAA28261EA0003617CA /* HJOpus */ = {
+			isa = PBXGroup;
+			children = (
+				24C8DDAB28261EA0003617CA /* AppDelegate.h */,
+				24C8DDAC28261EA0003617CA /* AppDelegate.m */,
+				24C8DDAE28261EA0003617CA /* SceneDelegate.h */,
+				24C8DDAF28261EA0003617CA /* SceneDelegate.m */,
+				24C8DDB128261EA0003617CA /* ViewController.h */,
+				24C8DDB228261EA0003617CA /* ViewController.m */,
+				24C8DDE028261EE0003617CA /* Opus */,
+				24C8DDB428261EA0003617CA /* Main.storyboard */,
+				24C8DDB728261EA1003617CA /* Assets.xcassets */,
+				24C8DDB928261EA1003617CA /* LaunchScreen.storyboard */,
+				24C8DDBC28261EA1003617CA /* Info.plist */,
+				24C8DDBD28261EA1003617CA /* main.m */,
+			);
+			path = HJOpus;
+			sourceTree = "<group>";
+		};
+		24C8DDC628261EA2003617CA /* HJOpusTests */ = {
+			isa = PBXGroup;
+			children = (
+				24C8DDC728261EA2003617CA /* HJOpusTests.m */,
+			);
+			path = HJOpusTests;
+			sourceTree = "<group>";
+		};
+		24C8DDD028261EA2003617CA /* HJOpusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24C8DDD128261EA2003617CA /* HJOpusUITests.m */,
+				24C8DDD328261EA2003617CA /* HJOpusUITestsLaunchTests.m */,
+			);
+			path = HJOpusUITests;
+			sourceTree = "<group>";
+		};
+		24C8DDE028261EE0003617CA /* Opus */ = {
+			isa = PBXGroup;
+			children = (
+				24C8DDE128261EE0003617CA /* opus.h */,
+				24C8DDE228261EE0003617CA /* OKEncoder.h */,
+				24C8DDE428261EE0003617CA /* amrFileCodec.h */,
+				24C8DDE528261EE0003617CA /* opus_multistream.h */,
+				24C8DDE628261EE0003617CA /* libopus.a */,
+				24C8DDE728261EE0003617CA /* OKDecoder.m */,
+				24C8DDE828261EE0003617CA /* OKCodec.h */,
+				24C8DDE928261EE0003617CA /* OKEncoder.m */,
+				24C8DDEA28261EE0003617CA /* opus_custom.h */,
+				24C8DDE328261EE0003617CA /* AudioManager.h */,
+				24C8DDEB28261EE0003617CA /* AudioManager.m */,
+				24C8DDEC28261EE0003617CA /* opus_types.h */,
+				24C8DDED28261EE0003617CA /* amrFileCodec.m */,
+				24C8DDEE28261EE0003617CA /* OKCodec.m */,
+				24C8DDEF28261EE0003617CA /* OKDecoder.h */,
+				24C8DDF028261EE0003617CA /* opus_defines.h */,
+			);
+			path = Opus;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24C8DDA728261EA0003617CA /* HJOpus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C8DDD728261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpus" */;
+			buildPhases = (
+				24C8DDA428261EA0003617CA /* Sources */,
+				24C8DDA528261EA0003617CA /* Frameworks */,
+				24C8DDA628261EA0003617CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HJOpus;
+			productName = HJOpus;
+			productReference = 24C8DDA828261EA0003617CA /* HJOpus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24C8DDC228261EA2003617CA /* HJOpusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C8DDDA28261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpusTests" */;
+			buildPhases = (
+				24C8DDBF28261EA2003617CA /* Sources */,
+				24C8DDC028261EA2003617CA /* Frameworks */,
+				24C8DDC128261EA2003617CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C8DDC528261EA2003617CA /* PBXTargetDependency */,
+			);
+			name = HJOpusTests;
+			productName = HJOpusTests;
+			productReference = 24C8DDC328261EA2003617CA /* HJOpusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24C8DDCC28261EA2003617CA /* HJOpusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24C8DDDD28261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpusUITests" */;
+			buildPhases = (
+				24C8DDC928261EA2003617CA /* Sources */,
+				24C8DDCA28261EA2003617CA /* Frameworks */,
+				24C8DDCB28261EA2003617CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24C8DDCF28261EA2003617CA /* PBXTargetDependency */,
+			);
+			name = HJOpusUITests;
+			productName = HJOpusUITests;
+			productReference = 24C8DDCD28261EA2003617CA /* HJOpusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24C8DDA028261EA0003617CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					24C8DDA728261EA0003617CA = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					24C8DDC228261EA2003617CA = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 24C8DDA728261EA0003617CA;
+					};
+					24C8DDCC28261EA2003617CA = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 24C8DDA728261EA0003617CA;
+					};
+				};
+			};
+			buildConfigurationList = 24C8DDA328261EA0003617CA /* Build configuration list for PBXProject "HJOpus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24C8DD9F28261EA0003617CA;
+			productRefGroup = 24C8DDA928261EA0003617CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24C8DDA728261EA0003617CA /* HJOpus */,
+				24C8DDC228261EA2003617CA /* HJOpusTests */,
+				24C8DDCC28261EA2003617CA /* HJOpusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24C8DDA628261EA0003617CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C8DDBB28261EA1003617CA /* LaunchScreen.storyboard in Resources */,
+				24C8DDB828261EA1003617CA /* Assets.xcassets in Resources */,
+				24C8DDB628261EA0003617CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDC128261EA2003617CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDCB28261EA2003617CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24C8DDA428261EA0003617CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C8DDB328261EA0003617CA /* ViewController.m in Sources */,
+				24C8DDAD28261EA0003617CA /* AppDelegate.m in Sources */,
+				24C8DDF428261EE0003617CA /* AudioManager.m in Sources */,
+				24C8DDF628261EE0003617CA /* OKCodec.m in Sources */,
+				24C8DDF228261EE0003617CA /* OKDecoder.m in Sources */,
+				24C8DDBE28261EA1003617CA /* main.m in Sources */,
+				24C8DDF328261EE0003617CA /* OKEncoder.m in Sources */,
+				24C8DDB028261EA0003617CA /* SceneDelegate.m in Sources */,
+				24C8DDF528261EE0003617CA /* amrFileCodec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDBF28261EA2003617CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C8DDC828261EA2003617CA /* HJOpusTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24C8DDC928261EA2003617CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24C8DDD228261EA2003617CA /* HJOpusUITests.m in Sources */,
+				24C8DDD428261EA2003617CA /* HJOpusUITestsLaunchTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24C8DDC528261EA2003617CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C8DDA728261EA0003617CA /* HJOpus */;
+			targetProxy = 24C8DDC428261EA2003617CA /* PBXContainerItemProxy */;
+		};
+		24C8DDCF28261EA2003617CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24C8DDA728261EA0003617CA /* HJOpus */;
+			targetProxy = 24C8DDCE28261EA2003617CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24C8DDB428261EA0003617CA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C8DDB528261EA0003617CA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24C8DDB928261EA1003617CA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24C8DDBA28261EA1003617CA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24C8DDD528261EA2003617CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		24C8DDD628261EA2003617CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24C8DDD828261EA2003617CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HJOpus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HJOpus/Opus",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24C8DDD928261EA2003617CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HJOpus/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/HJOpus/Opus",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpus";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24C8DDDB28261EA2003617CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJOpus.app/HJOpus";
+			};
+			name = Debug;
+		};
+		24C8DDDC28261EA2003617CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpusTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HJOpus.app/HJOpus";
+			};
+			name = Release;
+		};
+		24C8DDDE28261EA2003617CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HJOpus;
+			};
+			name = Debug;
+		};
+		24C8DDDF28261EA2003617CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jack-Han.HJOpusUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HJOpus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24C8DDA328261EA0003617CA /* Build configuration list for PBXProject "HJOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C8DDD528261EA2003617CA /* Debug */,
+				24C8DDD628261EA2003617CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C8DDD728261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C8DDD828261EA2003617CA /* Debug */,
+				24C8DDD928261EA2003617CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C8DDDA28261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C8DDDB28261EA2003617CA /* Debug */,
+				24C8DDDC28261EA2003617CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24C8DDDD28261EA2003617CA /* Build configuration list for PBXNativeTarget "HJOpusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24C8DDDE28261EA2003617CA /* Debug */,
+				24C8DDDF28261EA2003617CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24C8DDA028261EA0003617CA /* Project object */;
+}
